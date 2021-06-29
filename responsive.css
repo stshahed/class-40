@@ -8,13 +8,14 @@
 .menu span{
     display: none;
 }
+.mobile-icon-check{
+    display: none;
+}
 @media (max-width:991px) {
-    .menu span {
+    /* .menu span {
         display: block;
-        /* text-align: right; */
         font-size: 38px;
-        /* line-height: 69px; */
-    }
+    } */
     .menu ul {
         opacity: 0;
         visibility: hidden;
@@ -32,9 +33,19 @@
         padding: 0;
         line-height: 40px;
     }
-    .menu ul li ul {
-        top: -248%;
-        left: 194px;
+    .menu ul {
+        text-align: right;
+        margin-bottom: 0px;
+        padding: 50px 12px 0 0;
+    }
+    .menu ul li ul{
+        position: absolute;
+        top: -88%;
+        left: 175px;
+        background: none;
+        padding-right: 0;
+        width: 150px;
+        box-sizing: border-box;
         z-index: 999;
     }
     .menu ul li ul li a {
@@ -42,30 +53,34 @@
         line-height: 41px;
     }
     .menu ul li ul li{
+
         background: #ddd;
     }
     .menu {
         text-align: right;
+        position: relative;
     }
     .menu span {
-        display: block;
-        /* text-align: right; */
+        display: inline-block;
         font-size: 38px;
-        /* line-height: 69px; */
         position: absolute;
-        top: 6px;
-        right: 63px;
+        top: 5px;
+        right: 26px;
         pointer-events: none;
     }
     .mobile-icon-check {
+        position: absolute;
         height: 40px;
         width: 40px;
-        /* line-height: 61px; */
-        padding-top: 26px;
+        /* padding-top: 26px; */
         display: inline-block;
-        margin-top: 15px;
+        /* margin-top: 15px; */
+        /* margin-right: 17px; */
         opacity: 0;
         cursor: pointer;
+        /* padding-right: 50px; */
+        top: 14px;
+        right: 22px;
     }
     .menu ul li ul li ul{
         position: absolute;
